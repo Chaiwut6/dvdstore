@@ -6,7 +6,7 @@ if(!isset($_GET['uid'])){
 
 require 'conn.php';
 
-$sql = "SELECT * FROM user WHERE uid ='$_GET[uid]'";
+$sql = "SELECT * FROM user WHERE user.uid ='$_GET[uid]'";
 
 $result = $conn->query($sql);
 
