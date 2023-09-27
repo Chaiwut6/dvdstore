@@ -6,7 +6,7 @@ if(!isset($_GET['movie_id'])){
 
 require 'conn.php';
 
-$sql = "SELECT * FROM movie WHERE movie_id='$_GET[movie_id]'";
+$sql = "SELECT * FROM movie WHERE movie.movie_id='$_GET[movie_id]'";
 
 $result = $conn->query($sql);
 
